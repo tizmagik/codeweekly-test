@@ -1,0 +1,36 @@
+{
+  "name": "codeweekly-test",
+  "version": "1.0.0",
+  "description": "Example React, Jest & Enzyme",
+  "main": "index.js",
+  "repository": "git@github.com:tizmagik/codeweekly-test.git",
+  "author": "Jeremy Gayed (https://github.com/tizmagik)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.22.2",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.4.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^18.1.0",
+    "react-addons-test-utils": "^15.4.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}
