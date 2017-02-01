@@ -6,7 +6,7 @@ describe('Mocks', () => {
   beforeEach(() => {
     // We'll spy on console.log
     console.log = jest.fn();
-  })
+  });
 
   afterEach(() => {
     // Restore module cache so we can re-require 'App'
@@ -26,7 +26,7 @@ describe('Mocks', () => {
     expect(wrapper.text()).toBe('Foo');
   });
 
-  it('Uses the mocked version', () => {
+  it('Uses the shared mocked version', () => {
     // Tell Jest to use the shared mock version of Foo
     jest.mock('../Foo');
     // Require the component to test
@@ -50,7 +50,5 @@ describe('Mocks', () => {
     expect(console.log).not.toHaveBeenCalled();
     // assert that it's using the inline mocked version
     expect(wrapper.text()).toBe('Inline foo!');
-  })
-
-
+  });
 });
