@@ -7,9 +7,6 @@ describe('Counter tested via Enzyme', () => {
     // shallow render, although no real sub-components so it doesn't matter
     const wrapper = shallow(<Counter />);
 
-    // Grab the instance to read state or access methods
-    const instance = wrapper.instance();
-
     // Assert the state starts at 0
     expect(wrapper.state().count).toBe(0);
 
@@ -18,7 +15,8 @@ describe('Counter tested via Enzyme', () => {
     // And assert that it displays the right number
     expect(wrapper.find('mark').text()).toBe('1');
 
-    // Can also call increase off the instance directly
+    // Can also Grab the instance to read state or access methods
+    const instance = wrapper.instance();
     instance.increase();
     expect(wrapper.find('mark').text()).toBe('2');
   });

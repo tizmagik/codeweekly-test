@@ -6,9 +6,9 @@ describe('Foo Snapshot', () => {
   it('Renders', () => {
     const wrapper = shallow(<Foo />);
 
+    // Assert expected text is renderd
     expect(wrapper.text()).toBe('Foo');
 
-    // For more involved markup, could create a Snapshot test!
-    //expect(wrapper).toMatchSnapshot();
-  })
-})
+    // Boy, this sounds like a great use case for a Snapshot test!
+  });
+});
