@@ -10,5 +10,6 @@ describe('Foo Snapshot', () => {
     expect(wrapper.text()).toBe('Foo');
 
     // Boy, this sounds like a great use case for a Snapshot test!
+    expect(wrapper).toMatchSnapshot();
   });
 });

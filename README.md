@@ -1,4 +1,4 @@
-# codeweekly-test
+# openweekly-test
 
 Example usage of React, Jest, Enzyme
 
