@@ -1,0 +1,25 @@
+exports[`App as mounted 1`] = `
+<App>
+  <main>
+    <Foo>
+      <div>
+        Foo
+      </div>
+    </Foo>
+  </main>
+</App>
+`;
+
+exports[`App as rendered 1`] = `
+<main>
+  <div>
+    Foo
+  </div>
+</main>
+`;
+
+exports[`App as shallow 1`] = `
+<main>
+  <Foo />
+</main>
+`;
